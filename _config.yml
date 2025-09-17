@@ -9,6 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
+remote_theme             : academicpages/academicpages
 title                    : "Zhiyu Shi / Graduate student, Princeton University"
 title_separator          : "-"
 name                     : &name "Zhiyu Shi"
@@ -303,6 +304,7 @@ timezone: Etc/UTC # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 # Plugins
 plugins:
+  - jekyll-remote-theme
   - jekyll-feed
   - jekyll-gist
   - jekyll-paginate
