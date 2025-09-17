@@ -12,9 +12,10 @@ I study plasma-assisted combustion and chemical synthesis, driven by the broader
 
 To achieve this, I have developed a multiscale modeling framework that integrates quantum-chemistry calculations (DFT), machine learning molecular dynamics (ML-MD), and large-scale parallel simulations of reactive flows. This framework allows me to connect fundamental reaction mechanisms with real-world plasma and combustion processes. Ultimately, my goal is to provide the scientific foundation and develop accurate, comprehensive modeling tools to enable sustainable, efficient, and controllable energy-conversion technologies.
 
-<div class="grid">
+<div style="display:flex; justify-content:space-between; gap:40px;">
+
   <!-- Interests 在左边 -->
-  <div class="grid__item one-half first">
+  <div style="flex:1;">
     <h2>Interests</h2>
     <ul class="fa-ul">
       <li><span class="fa-li"><i class="fas fa-book"></i></span> Plasma-assisted combustion</li>
@@ -25,11 +26,13 @@ To achieve this, I have developed a multiscale modeling framework that integrate
   </div>
 
   <!-- Education 在右边 -->
-  <div class="grid__item one-half last">
+  <div style="flex:1;">
     <h2>Education</h2>
     <ul class="fa-ul">
       <li><span class="fa-li"><i class="fas fa-graduation-cap"></i></span> Ph.D., Mechanical & Aerospace Engineering — Princeton University, expected 2026</li>
       <li><span class="fa-li"><i class="fas fa-graduation-cap"></i></span> B.S., Theoretical & Applied Mechanics — Peking University, 2021</li>
     </ul>
   </div>
+
 </div>
+
