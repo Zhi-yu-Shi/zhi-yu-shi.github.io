@@ -21,7 +21,7 @@ repository    : "Zhi-yu-Shi/zhi-yu-shi.github.io"
 # Author (left sidebar)
 # =========================
 author:
-  avatar     : "profile.png"
+  avatar     : "/images/profile.png"
   name       : "Zhiyu Shi"
   pronouns   : "he/him"
   bio        : "PhD at Princeton | Plasma-assisted combustion & catalysis"
