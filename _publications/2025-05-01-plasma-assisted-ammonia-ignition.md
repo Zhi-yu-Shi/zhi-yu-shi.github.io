@@ -3,7 +3,7 @@ title: "Plasma assisted NH3/H2/air ignition in nanosecond discharges with non-eq
 authors: "Zhiyu Shi, Xingqian Mao, Ziyu Wang, Yiguang Ju"
 collection: publications
 category: manuscripts        
-permalink: /publications/2025-05-01-plasma-assisted ammonia ignition
+permalink: /publications/2025-05-01-plasma-assisted-ammonia-ignition
 date: 2025-05-01
 year: 2025
 venue: "Combustion and Flame"
