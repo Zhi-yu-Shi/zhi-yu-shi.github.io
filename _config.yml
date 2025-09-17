@@ -209,16 +209,6 @@ collections:
 # Defaults for each collection
 # =========================
 defaults:
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout         : single
-      author_profile : true
-      read_time      : true
-      comments       : true
-      share          : true
-      related        : true
 
   - scope:
       path: ""
@@ -229,30 +219,12 @@ defaults:
 
   - scope:
       path: ""
-      type: teaching
-    values:
-      layout         : single
-      author_profile : true
-      share          : true
-      comments       : true
-
-  - scope:
-      path: ""
       type: publications
     values:
       layout         : single
       author_profile : true
       share          : true
       comments       : true
-
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout         : single
-      author_profile : true
-      share          : true
-      comment        : true
 
   - scope:
       path: ""
