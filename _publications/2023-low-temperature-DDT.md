@@ -1,9 +1,9 @@
 ---
 title: "Effect of plasma-enhanced low-temperature chemistry on deflagration-to-detonation transition in a microchannel"
-authors: "Madeline Vorenkamp, Scott Steinmetz, Xingqian Mao, Zhiyu Shi, Andrey Starikovskiy, Yiguang Ju, Christopher Kliewer"
+authors: "Madeline Vorenkamp, Scott Steinmetz, Xingqian Mao, **Zhiyu Shi**, Andrey Starikovskiy, Yiguang Ju, Christopher Kliewer"
 collection: publications
 category: manuscripts       
-permalink: /publications/2023-11-low temperature DDT
+permalink: /publications/2023-11-low-temperature-DDT
 date: 2023-11
 year: 2023
 venue: "AIAA journal"
