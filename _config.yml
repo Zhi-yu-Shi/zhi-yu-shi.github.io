@@ -1,163 +1,135 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your entire site, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve -l -H localhost`. If you change this file, please restart the 
-# server process.
-
+# =========================
 # Basic Site Settings
-locale                   : "en-US"
-site_theme               : "default" # Currently available options are "default", "air"
-remote_theme             : academicpages/academicpages
-title                    : "Zhiyu Shi / Graduate student, Princeton University"
-title_separator          : "-"
-name                     : &name "Zhiyu Shi"
-description              : &description "Multiscale modeling of plasma-assisted combustion and catalysis"
-url                      : https://zhi-yu-shi.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "Zhi-yu-Shi/zhi-yu-shi.github.io"
+# =========================
+locale        : "en-US"
+site_theme    : "default"   # custom var used by AcademicPages (default / air)
 
-# Site Author - The following control what appear as part of the author content on the side bar.
-#               If a field is blank the icon and link will not appear, otherwise it will be shown.
-#               Additional customization can be done by editing /_includes/author-profile.html
+# Use AcademicPages as a remote theme (correct repo name)
+remote_theme  : academicpages/academicpages.github.io
+
+title         : "Zhiyu Shi / Graduate student, Princeton University"
+title_separator: "-"
+name          : &name "Zhiyu Shi"
+description   : &description "Multiscale modeling of plasma-assisted combustion and catalysis"
+
+# Your GitHub Pages root URL and repo (make sure these match your actual repo/user)
+url           : "https://zhi-yu-shi.github.io"
+baseurl       : ""                         # keep empty for user site
+repository    : "Zhi-yu-Shi/zhi-yu-shi.github.io"
+
+# =========================
+# Author (left sidebar)
+# =========================
 author:
-  # Biographic information
-  avatar           : "profile.png"
-  name             : "Zhiyu Shi"
-  pronouns         : "he/him"  
-  bio              : "PhD at Princeton | Plasma-assisted combustion & catalysis"
-  location         : "Princeton, NJ"
-  employer         : "Princeton University"
-  uri              : # URL
-  email            : "zs3643@princeton.edu" 
+  avatar     : "profile.png"
+  name       : "Zhiyu Shi"
+  pronouns   : "he/him"
+  bio        : "PhD at Princeton | Plasma-assisted combustion & catalysis"
+  location   : "Princeton, NJ"
+  employer   : "Princeton University"
+  uri        :
+  email      : "zs3643@princeton.edu"
 
-  # Academic websites
-  academia         : # URL
-  arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=USgOMmMAAAAJ&hl=en"
-  inspire-hep      : # URL
-  impactstory      : # URL
-  orcid            : "https://orcid.org/my-orcid?orcid=0009-0008-8786-1298"
-  semantic         : # URL
-  pubmed           : # URL
-  researchgate     : "https://www.researchgate.net/scientific-contributions/Zhiyu-Shi-2241567204"
-  scopus           : # URL
+  # Academic profiles
+  googlescholar: "https://scholar.google.com/citations?user=USgOMmMAAAAJ&hl=en"
+  orcid        : "https://orcid.org/0009-0008-8786-1298"
+  researchgate : "https://www.researchgate.net/scientific-contributions/Zhiyu-Shi-2241567204"
 
-  # Repositories and software development
-  bitbucket        : # Username - Update with your username on the site
-  codepen          : # Username
-  dribbble         : # Username
-  github           : "Zhi-yu-Shi"
-  kaggle           : # Username  
-  stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
+  # Code / repos
+  github     : "Zhi-yu-Shi"
 
-  # Social media
-  artstation       : # Username
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
-  facebook         : # Username
-  flickr           : # Username
-  foursquare       : # Username
-  goodreads        : # Username
-  google_plus      : # Username
-  keybase          : # Username
-  instagram        : # Username
-  lastfm           : # Username
-  linkedin         : # Username
-  mastodon         : # URL
-  medium           : # URL
-  pinterest        : # Username
-  soundcloud       : # Username
-  steam            : # Username
-  telegram         : # URL
-  tumblr           : # Username
-  twitter          : # Username for X / Twitter
-  vine             : # Username
-  weibo            : # Username
-  wikipedia        : # Username
-  xing             : # Username
-  youtube          : # Username
-  zhihu            : # Username
+  # Social (leave blank if not used)
+  bluesky    :
+  linkedin   :
+  twitter    :
+  zhihu      :
 
-# Publication Category - The following the list of publication categories and their headings
+# =========================
+# Publication categories (keys used by each post's `category`)
+# =========================
 publication_category:
   books:
-    title: 'Books'
+    title: "Books"
   manuscripts:
-    title: 'Journal Articles'    
+    title: "Journal Articles"
   conferences:
-    title: 'Conference Papers'
+    title: "Conference Papers"
 
+# =========================
 # Site Settings
-teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
-breadcrumbs              : false # true, false (default)
-words_per_minute         : 160
-future                   : true
-read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
-talkmap_link             : false      #change to true to add link to talkmap on talks page
+# =========================
+teaser        :
+breadcrumbs   : false
+words_per_minute: 160
+future        : true
+read_more     : "disabled"
+talkmap_link  : false
+
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+  provider    :
   disqus:
-    shortname            :
+    shortname :
   discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+    server    :
   facebook:
-    appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
+    appid     :
+    num_posts :
+    colorscheme:
+
 staticman:
-  allowedFields          : ['name', 'email', 'url', 'message']
-  branch                 : "gh-pages" # "master", "gh-pages"
-  commitMessage          : "New comment."
-  filename               : comment-{@timestamp}
-  format                 : "yml"
-  moderation             : true
-  path                   : "_data/comments/{options.slug}"
-  requiredFields         : ['name', 'email', 'message']
+  allowedFields : ['name', 'email', 'url', 'message']
+  branch        : "gh-pages"
+  commitMessage : "New comment."
+  filename      : comment-{@timestamp}
+  format        : "yml"
+  moderation    : true
+  path          : "_data/comments/{options.slug}"
+  requiredFields: ['name', 'email', 'message']
   transforms:
-    email                : "md5"
+    email      : "md5"
   generatedFields:
     date:
-      type               : "date"
+      type     : "date"
       options:
-        format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
+        format : "iso8601"
+
 atom_feed:
-  hide                   : false     # change to true to hide the RSS feed in the footer
-  path                   : # blank (default) uses feed.xml
+  hide         : false
+  path         :
 
-
-# SEO Related
+# =========================
+# SEO / Social
+# =========================
 google_site_verification :
 bing_site_verification   :
 alexa_site_verification  :
 yandex_site_verification :
 
-
-# Social Sharing
 twitter:
-  username               : &twitter
+  username     :
 facebook:
-  username               :
-  app_id                 :
-  publisher              :
-og_image                 :  # Social media default site image
-og_description           :  # Social media default site image description
-# For specifying social profiles
-# - https://developers.google.com/structured-data/customize/social-profiles
+  username     :
+  app_id       :
+  publisher    :
+og_image       :
+og_description :
+
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  type         :
+  name         :
+  links        :
 
-
+# =========================
 # Analytics
+# =========================
 analytics:
-  provider               :  "false" # false (default), "google", "google-universal", "google-analytics-4", "custom"
+  provider     : "false"
   google:
-    tracking_id          :
+    tracking_id:
 
-
-# Reading Files
+# =========================
+# Files to include/exclude
+# =========================
 include:
   - .htaccess
   - _pages
@@ -189,120 +161,125 @@ exclude:
   - README
   - tmp
   - vendor
+
 keep_files:
   - .git
   - .svn
-encoding: "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
+encoding     : "utf-8"
+markdown_ext : "markdown,mkdown,mkdn,mkd,md"
 
-# Conversion
-markdown: kramdown
-highlighter: rouge
-lsi: false
-excerpt_separator: "\n\n"
-incremental: false
+# =========================
+# Conversion / Markdown
+# =========================
+markdown           : kramdown
+highlighter        : rouge
+lsi                : false
+excerpt_separator  : "\n\n"
+incremental        : false
 
-
-# Markdown Processing
 kramdown:
-  input: GFM
-  hard_wrap: false
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
+  input            : GFM
+  hard_wrap        : false
+  auto_ids         : true
+  footnote_nr      : 1
+  entity_output    : as_char
+  toc_levels       : 1..6
+  smart_quotes     : lsquo,rsquo,ldquo,rdquo
+  enable_coderay   : false
 
-
-# These settings control the types of collections used by the template
+# =========================
+# Collections
+# =========================
 collections:
   teaching:
-    output: true
-    permalink: /:collection/:path/
+    output    : true
+    permalink : /:collection/:path/
   publications:
-    output: true
-    permalink: /:collection/:path/
+    output    : true
+    permalink : /:collection/:path/
   portfolio:
-    output: true
-    permalink: /:collection/:path/
+    output    : true
+    permalink : /:collection/:path/
   talks:
-    output: true
-    permalink: /:collection/:path/
+    output    : true
+    permalink : /:collection/:path/
 
-
-# These settings control how pages and collections are included in the site
+# =========================
+# Defaults for each collection
+# =========================
 defaults:
-  # _posts
   - scope:
       path: ""
       type: posts
     values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
-  # _pages
+      layout         : single
+      author_profile : true
+      read_time      : true
+      comments       : true
+      share          : true
+      related        : true
+
   - scope:
       path: ""
       type: pages
     values:
-      layout: single
-      author_profile: true
-  # _teaching
+      layout         : single
+      author_profile : true
+
   - scope:
       path: ""
       type: teaching
     values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
-  # _publications
+      layout         : single
+      author_profile : true
+      share          : true
+      comments       : true
+
   - scope:
       path: ""
       type: publications
     values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
-  # _portfolio
+      layout         : single
+      author_profile : true
+      share          : true
+      comments       : true
+
   - scope:
       path: ""
       type: portfolio
     values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
-  # _talks
+      layout         : single
+      author_profile : true
+      share          : true
+      comment        : true
+
   - scope:
       path: ""
       type: talks
     values:
-      layout: talk
-      author_profile: true
-      share: true
+      layout         : talk
+      author_profile : true
+      share          : true
 
-
+# =========================
 # Sass/SCSS
+# =========================
 sass:
-  sass_dir: _sass
-  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+  sass_dir : _sass
+  style    : compressed
 
-
-# Outputting
-permalink: /:categories/:title/
-# paginate: 5 # amount of posts to show
+# =========================
+# Output / Permalinks
+# =========================
+permalink    : /:categories/:title/
+timezone     : Etc/UTC
+# paginate   : 5
 # paginate_path: /page:num/
-timezone: Etc/UTC # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
-
-# Plugins
+# =========================
+# Plugins (GitHub Pages-safe)
+# =========================
 plugins:
   - jekyll-remote-theme
   - jekyll-feed
@@ -312,7 +289,7 @@ plugins:
   - jekyll-redirect-from
   - jemoji
 
-# Mimic GitHub Pages with --safe
+# For --safe mode mimic (optional)
 whitelist:
   - jekyll-feed
   - jekyll-gist
@@ -321,38 +298,19 @@ whitelist:
   - jekyll-redirect-from
   - jemoji
 
-
+# =========================
 # Archives
-#  Type
-#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
-#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
-#  Path (examples)
-#  - Archive page should exist at path when using Liquid method or you can
-#    expect broken links (especially with breadcrumbs enabled)
-#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
-#  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
-#  - <base_path/my-awesome-category/index.html ~> path: /
+# =========================
 category_archive:
   type: liquid
   path: /categories/
 tag_archive:
   type: liquid
   path: /tags/
-# https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
 
-
+# =========================
 # HTML Compression
-# - http://jch.penibelst.de/
+# =========================
 compress_html:
   clippings: all
   ignore:
