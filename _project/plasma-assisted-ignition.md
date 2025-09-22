@@ -19,5 +19,14 @@ This research consists of two separate but closely related works. In the first w
 
 In the second work, we numerically investigates the hybrid plasma (NSD+DC) assisted ignition and flame propagation for H2/air mixtures. We aim to show that hybrid plasma is more efficient than NSD at the same total energy in reactive flows and explain the mechanisms as well as to control non-equilibrium energy transfer for efficient hybrid plasma assisted ignition, focusing on the effects of NSD voltage, DC voltage, pulse repetition frequency. The following conclusions were found:
 
+1. With the same total eenrgy between Hybrid Plasma vs. NSD, hybrid plasma is more efficient due to chain branching: Reactions between vibrationally excited species (H₂(v), O₂(a¹Δg), O₂(v)) and radicals enhance reactivity.
+
+2. At a low NSD E/N: Diffuse, volumetric kernel forms; DC stage provides thermal–volume bridging, sustaining and expanding it beyond the critical size → ignition. On the contrary, at a high NSD E/N: Filamentary discharge; despite higher radical yields, the kernel remains subcritical and losses dominate → no hybrid advantage.
+
+3. Low DC voltage: Hybrid benefit increases, with thermal effect playing a larger role.
+
+4. Low pulse frequency with multiple pulses: Hybrid advantage strengthens due to greater kernel overlap between pulses.
+
+
 <img width="4582" height="525" alt="image" src="https://github.com/user-attachments/assets/6d42f61d-7fc7-467a-8099-a25e77c999f2" />
 
