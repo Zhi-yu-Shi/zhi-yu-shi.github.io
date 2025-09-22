@@ -2,9 +2,9 @@
 title: "Advancing Reaction Kinetics Modeling with an Ab Initio Trained Machine Learning Based Molecular Dynamics Model (aML-MD)"
 permalink: /project/mlmd/
 excerpt: "The first work to use ML-MD for quantitative reaction dynamics in complex combustion and catalysis systems"
-teaser: /images/projects/nh3-thumb.jpg
+teaser: /images/projects/mlmd-thumb.jpg
 header:
-  overlay_image: /images/projects/nh3-hero.jpg
+  overlay_image: /images/projects/mlmd-hero.jpg
 tags: [ML-MD, quasiclassical trajectory, transfer learning]
 ---
 
