@@ -2,9 +2,9 @@
 title: "Mechanism of Nitride Formation on Ni(111) under N₂/H₂ Plasma Conditions"
 permalink: /project/nitridation/
 excerpt: "How NH radical promotes nitride formation and ammonia synthesis"
-teaser: /images/projects/nh3-thumb.jpg
+teaser: /images/projects/nitridation-thumb.jpg
 header:
-  overlay_image: /images/projects/nh3-hero.jpg
+  overlay_image: /images/projects/nitridation-hero.jpg
 tags: [ammonia synthesis, nitride formation, plasma]
 ---
 
