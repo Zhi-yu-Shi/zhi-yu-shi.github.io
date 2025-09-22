@@ -28,5 +28,4 @@ In the second work, we numerically investigates the hybrid plasma (NSD+DC) assis
 4. Low pulse frequency with multiple pulses: Hybrid advantage strengthens due to greater kernel overlap between pulses.
 
 
-<img width="4582" height="525" alt="image" src="https://github.com/user-attachments/assets/6d42f61d-7fc7-467a-8099-a25e77c999f2" />
 
