@@ -1,6 +1,6 @@
 ---
 title: "Advancing Reaction Kinetics Modeling with an Ab Initio Trained Machine Learning Based Molecular Dynamics Model (aML-MD)"
-permalink: /project/nh3-ignition/
+permalink: /project/mlmd/
 excerpt: "The first work to use ML-MD for quantitative reaction dynamics in complex combustion and catalysis systems"
 teaser: /images/projects/nh3-thumb.jpg
 header:
