@@ -1,0 +1,12 @@
+<ol start="{{ include.start | default: 1 }}">
+  {% for article in include.articles %}
+    {% capture title_link %}<a href="{{ article.url | relative_url }}">{{ article.title | escape }}</a>{% endcapture %}
+    <li>
+      <p>
+        {{ article.citation | replace_first: article.title, title_link }}
+        <a href="{{ article.paperurl | escape }}" aria-label="DOI for {{ article.title | escape }}">DOI</a>
+        {% if article.contribution_note %}<br><small>† {{ article.contribution_note | escape }}</small>{% endif %}
+      </p>
+    </li>
+  {% endfor %}
+</ol>

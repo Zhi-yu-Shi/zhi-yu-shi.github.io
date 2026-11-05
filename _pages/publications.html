@@ -6,30 +6,34 @@ author_profile: true
 ---
 
 {% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
+  <p><a href="{{ site.author.googlescholar | escape }}">Google Scholar profile</a></p>
 {% endif %}
 
-{% include base_path %}
+{% assign articles = site.publications | where: "category", "manuscripts" | sort: "cv_order" %}
+{% assign lead = articles | where_exp: "article", "article.lead_author == true" %}
+{% assign other = articles | where_exp: "article", "article.lead_author != true" %}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
+<h2>Peer-Reviewed Journal Articles</h2>
+<h3>First and co-first author articles</h3>
+{% include journal-citations.html articles=lead %}
+
+<h3>Other peer-reviewed articles</h3>
+{% assign first_other = lead.size | plus: 1 %}
+{% include journal-citations.html articles=other start=first_other %}
+
+{% if site.data.manuscripts_in_preparation %}
+  <h2>Manuscripts in Preparation</h2>
+  <ol>
+    {% for manuscript in site.data.manuscripts_in_preparation %}
+      <li>
+        <p>
+          {{ manuscript.authors | escape | replace: "Shi, Z.", "<strong>Shi, Z.</strong>" | replace: "*", "<sup>*</sup>" }}
+          {{ manuscript.title | escape }}.
+          {% if manuscript.contribution_note %}<br><small>* {{ manuscript.contribution_note | escape }}</small>{% endif %}
+        </p>
+      </li>
     {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
+  </ol>
 {% endif %}
 
 
