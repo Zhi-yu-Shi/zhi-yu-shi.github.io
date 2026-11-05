@@ -27,7 +27,7 @@ author:
   name       : "Zhiyu Shi"
   pronouns   : "he/him"
   bio        : "Postdoctoral Scholar in Chemistry"
-  bio_before : "Incoming Postdoctoral Scholar in Chemistry · Nov 23, 2026"
+  bio_before : "Incoming Postdoctoral Scholar in Chemistry · Nov 2026"
   location   : "Berkeley, CA"
   location_before : "Princeton, NJ"
   employer   : "UC Berkeley"
@@ -36,11 +36,11 @@ author:
 
   # Academic profiles
   googlescholar: "https://scholar.google.com/citations?user=USgOMmMAAAAJ&hl=en"
-  orcid        : "https://orcid.org/0009-0008-8786-1298"
-  researchgate : "https://www.researchgate.net/scientific-contributions/Zhiyu-Shi-2241567204"
+  # orcid        : "https://orcid.org/0009-0008-8786-1298"
+  # researchgate : "https://www.researchgate.net/scientific-contributions/Zhiyu-Shi-2241567204"
 
   # Code / repos
-  github     : "Zhi-yu-Shi"
+  # github     : "Zhi-yu-Shi"
 
   # Social (leave blank if not used)
   bluesky    :
