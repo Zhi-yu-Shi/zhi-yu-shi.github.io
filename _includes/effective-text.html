@@ -1,0 +1,3 @@
+{%- assign built_at = site.time | date: "%s" | plus: 0 -%}
+{%- assign effective_at = include.from | date: "%s" | plus: 0 -%}
+<span data-effective-at="{{ include.from | escape }}" data-after="{{ include.after | escape }}">{% if built_at >= effective_at %}{{ include.after | escape }}{% else %}{{ include.before | escape }}{% endif %}</span>

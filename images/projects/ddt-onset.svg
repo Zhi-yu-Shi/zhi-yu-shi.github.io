@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="300" viewBox="0 0 640 300" role="img" aria-labelledby="title description">
+  <title id="title">Plasma pulse number and time to detonation in a hydrogen–oxygen microchannel</title>
+  <desc id="description">Simulated onset times for 0, 100, 250, 400, 500, 750 and 1,200 pulses are 732, 706, 688, 704, 708, 774 and 886 microseconds, respectively. The dashed line marks the untreated case.</desc>
+  <rect width="640" height="300" rx="5" fill="#fafcfd"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#294050">
+    <text x="73" y="25" font-size="17" font-weight="bold">Time to detonation (µs)</text>
+    <line x1="74" x2="594" y1="223" y2="223" stroke="#dce2e8"/>
+    <text x="62" y="228" text-anchor="end" font-size="15">650</text>
+    <line x1="74" x2="594" y1="187.4" y2="187.4" stroke="#dce2e8"/>
+    <text x="62" y="192.4" text-anchor="end" font-size="15">700</text>
+    <line x1="74" x2="594" y1="151.8" y2="151.8" stroke="#dce2e8"/>
+    <text x="62" y="156.8" text-anchor="end" font-size="15">750</text>
+    <line x1="74" x2="594" y1="116.2" y2="116.2" stroke="#dce2e8"/>
+    <text x="62" y="121.2" text-anchor="end" font-size="15">800</text>
+    <line x1="74" x2="594" y1="80.6" y2="80.6" stroke="#dce2e8"/>
+    <text x="62" y="85.6" text-anchor="end" font-size="15">850</text>
+    <line x1="74" x2="594" y1="45" y2="45" stroke="#dce2e8"/>
+    <text x="62" y="50" text-anchor="end" font-size="15">900</text>
+    <path d="M74 44 V223 H594" stroke="#5e6d78" fill="none"/>
+    <line x1="74" x2="594" y1="164.62" y2="164.62" stroke="#5e6d78" stroke-dasharray="6 5"/>
+    <text x="587" y="181.62" text-anchor="end" fill="#5e6d78" font-size="14">No-discharge onset</text>
+    <polyline points="74,164.62 117.33,183.13 182.33,195.94 247.33,184.55 290.67,181.7 399,134.71 594,54.97" fill="none" stroke="#174f78" stroke-width="3"/>
+    <circle cx="74" cy="164.62" r="5" fill="#174f78" stroke="#fff" stroke-width="1.5"/>
+    <circle cx="117.33" cy="183.13" r="5" fill="#174f78" stroke="#fff" stroke-width="1.5"/>
+    <circle cx="182.33" cy="195.94" r="5" fill="#174f78" stroke="#fff" stroke-width="1.5"/>
+    <circle cx="247.33" cy="184.55" r="5" fill="#174f78" stroke="#fff" stroke-width="1.5"/>
+    <circle cx="290.67" cy="181.7" r="5" fill="#174f78" stroke="#fff" stroke-width="1.5"/>
+    <circle cx="399" cy="134.71" r="5" fill="#174f78" stroke="#fff" stroke-width="1.5"/>
+    <circle cx="594" cy="54.97" r="5" fill="#174f78" stroke="#fff" stroke-width="1.5"/>
+    <line x1="74" x2="74" y1="223" y2="229" stroke="#5e6d78"/>
+    <text x="74" y="249" text-anchor="middle" font-size="15">0</text>
+    <line x1="182.33" x2="182.33" y1="223" y2="229" stroke="#5e6d78"/>
+    <text x="182.33" y="249" text-anchor="middle" font-size="15">250</text>
+    <line x1="290.67" x2="290.67" y1="223" y2="229" stroke="#5e6d78"/>
+    <text x="290.67" y="249" text-anchor="middle" font-size="15">500</text>
+    <line x1="399" x2="399" y1="223" y2="229" stroke="#5e6d78"/>
+    <text x="399" y="249" text-anchor="middle" font-size="15">750</text>
+    <line x1="507.33" x2="507.33" y1="223" y2="229" stroke="#5e6d78"/>
+    <text x="507.33" y="249" text-anchor="middle" font-size="15">1,000</text>
+    <line x1="594" x2="594" y1="223" y2="229" stroke="#5e6d78"/>
+    <text x="594" y="249" text-anchor="middle" font-size="15">1,200</text>
+    <text x="335" y="281" text-anchor="middle" font-size="17" font-weight="bold">Number of discharge pulses</text>
+  </g>
+</svg>

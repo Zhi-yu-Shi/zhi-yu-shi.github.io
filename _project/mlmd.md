@@ -1,16 +1,22 @@
 ---
-title: "Advancing Reaction Kinetics Modeling with an Ab Initio Trained Machine Learning Based Molecular Dynamics Model (aML-MD)"
+title: "Machine-learned interatomic potentials for reaction kinetics"
 permalink: /project/mlmd/
-excerpt: "The first work to use ML-MD for quantitative reaction dynamics in complex combustion and catalysis systems"
-teaser: /images/projects/mlmd-thumb.jpg
-header:
-  overlay_image: /images/projects/mlmd-hero.jpg
-tags: [ML-MD, quasiclassical trajectory, transfer learning]
+project_order: 1
+excerpt: "I used multifidelity transfer learning to predict elementary reaction rates in hydrogen combustion while reducing the cost of generating quantum-chemistry training data."
 ---
 
-Machine learning (ML) provides a great opportunity for the construction of models with improved accuracy in classical molecular
-dynamics (MD). However, the accuracy of a ML trained model is limited by the quality and quantity of the training data. Generating large
-sets of accurate ab initio training data can require significant computational resources. Furthermore, inconsistent or incompatible
-data with different accuracies obtained using different methods may lead to biased or unreliable ML models that do not accurately represent the underlying physics. 
+A potential can fit the energies of thousands of molecular configurations and still give the wrong reaction rate. For hydrogen combustion, I tested a machine-learned potential by running molecular collisions and comparing the predicted rate constants with benchmark calculations.
 
-Recently, transfer learning showed its potential for avoiding these problems as well as for improving the accuracy, efficiency, and generalization of ML models using multifidelity data. In this work, ab initio trained ML-based MD (aML-MD) models are developed through transfer learning using DFT and multireference data from multiple sources with varying accuracy within the Deep Potential MD framework. The accuracy of the force field is demonstrated by calculating rate constants for the H + HO2 → H2 + O2 reaction using quasi-classical trajectories. We show that the aML-MD model with transfer learning can accurately predict the rate constants while reducing the computational cost by more than five times compared to the use of more expensive quantum chemistry training datasets. Hence, the aML-MD model with transfer learning shows great potential in using multifidelity data to reduce the computational cost involved in generating the training set for these potentials.
+## Learning from two levels of quantum chemistry
+
+I first trained the potential on a large set of density functional theory calculations, then refined it with higher-accuracy multireference energies for a small subset of configurations. For H + HO₂ → H₂ + ³O₂, quasi-classical trajectories on the refined potential reproduced the benchmark rate constants. Transfer learning reduced the cost of generating the training data by more than 80% relative to using high-accuracy quantum calculations alone. [Read the study in *The Journal of Physical Chemistry A*](https://doi.org/10.1021/acs.jpca.4c00750).
+
+<figure>
+  <img src="{{ '/images/projects/multifidelity-kinetics.svg' | relative_url }}" width="620" height="295" style="max-width: 100%; height: auto;" alt="Density functional theory data train an initial potential. Multireference energies refine it. Collision trajectories on the refined potential yield rate constants for comparison with benchmarks.">
+</figure>
+
+## From one reaction to competing outcomes
+
+In collaboration with Argonne National Laboratory, I extended this approach to model HO₂ collisions with radicals and with third bodies. A collision can rearrange chemical bonds or redistribute energy among molecular motions. The trajectories let us extract reaction rates and collisional energy-transfer statistics for kinetic models of hydrogen combustion. [Read the AIAA SciTech paper on radical reactions](https://doi.org/10.2514/6.2026-1623).
+
+In related work, I helped develop a machine-learned force field for ammonia synthesis on iron catalysts. We used molecular dynamics to study how temperature modulation affects reactions on the iron surface. [Read the study in *The Journal of Physical Chemistry C*](https://doi.org/10.1021/acs.jpcc.4c07596).

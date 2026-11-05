@@ -1,31 +1,19 @@
 ---
-title: "Controlled non-equilibrium energy transfer for efficient ignition in reactive flows"
+title: "Plasma-assisted ignition of ammonia and hydrogen"
 permalink: /project/plasma-assisted-ignition/
-excerpt: "Provided design principles for plasma-assisted ignition in reactive flows with Nanosecond and DC Discharges"
-teaser: /images/projects/nh3-thumb.jpg
-header:
-  overlay_image: /images/projects/nh3-hero.jpg
-tags: [ammonia, hydrogen, non-equilibrium energy transfer, plasma-assisted ignition]
+project_order: 3
+excerpt: "Two-dimensional simulations reveal how electric field, electrode spacing, and pulse timing determine whether a plasma-generated ignition kernel grows into a flame."
 ---
-This research consists of two separate but closely related works. In the first work, we numerically investigates plasma-assisted ignition and flame propagation using nanosecond discharges. It is the first comprehensive analysis of how varying non-equilibrium conditions - such as applied voltages, electrode gap sizes, pulse repetition frequencies, and pulse numbers - impacts ignition in an NH3/H2/air flow using a multi-dimensional approach. The focus is to control non-equilibrium energy transfer for efficient NH3 combustion in reactive flows by strategically manipulating electron energy deposition pathways, modifying energy distribution within the discharge region, and promoting the continuous accumulation of radicals. The following conclusions were found: 
 
-1. An E/N of around 200 Td optimizes ignition enhancement due to the most effective generation of radicals and electronically excited species.
+An electrical discharge creates a small region of hot, reactive gas. For ignition to succeed, this kernel must grow before radicals decay and heat escapes. I coupled plasma kinetics with two-dimensional flow and combustion simulations to trace how electrical energy reaches the chemical reactions that sustain the kernel.
 
-2. Excessively large electrode gaps lead to ignition failure due to reduced energy density. An excessively small gap size constrains the size of the initial ignition kernel.
+## Nanosecond pulses in ammonia and hydrogen blends
 
-3. At lower frequencies, the ignition kernel volume decreases due to radicals quenching and heat loss during the inter-pulse period. At higher frequencies, the effect of two sequential pulses merges to resemble a single pulse.
+In the NH₃/H₂/air flow studied at 700 K and 1 atm, a reduced electric field near 200 Td gave the strongest ignition enhancement. At that field, electrons efficiently created radicals and electronically excited species. Increasing the voltage further diverted more energy into ionization. Narrowing the electrode gap concentrated the deposited energy, but an overly narrow gap produced a kernel too small to develop into a sustained flame. [Read the study in *Combustion and Flame*](https://doi.org/10.1016/j.combustflame.2025.114053).
 
-4. A higher pulse frequency combined with more pulses maximizes the overlap region, accelerates radicals’ accumulation, and significantly enhances ignition performance.
+## Sustaining a hydrogen ignition kernel between pulses
 
-In the second work, we numerically investigates the hybrid plasma (NSD+DC) assisted ignition and flame propagation for H2/air mixtures. We aim to show that hybrid plasma is more efficient than NSD at the same total energy in reactive flows and explain the mechanisms as well as to control non-equilibrium energy transfer for efficient hybrid plasma assisted ignition, focusing on the effects of NSD voltage, DC voltage, pulse repetition frequency. The following conclusions were found:
-
-1. With the same total eenrgy between Hybrid Plasma vs. NSD, hybrid plasma is more efficient due to chain branching: Reactions between vibrationally excited species (H₂(v), O₂(a¹Δg), O₂(v)) and radicals enhance reactivity.
-
-2. At a low NSD E/N: Diffuse, volumetric kernel forms; DC stage provides thermal–volume bridging, sustaining and expanding it beyond the critical size → ignition. On the contrary, at a high NSD E/N: Filamentary discharge; despite higher radical yields, the kernel remains subcritical and losses dominate → no hybrid advantage.
-
-3. Low DC voltage: Hybrid benefit increases, with thermal effect playing a larger role.
-
-4. Low pulse frequency with multiple pulses: Hybrid advantage strengthens due to greater kernel overlap between pulses.
+For H₂/air, I compared nanosecond excitation alone with a hybrid discharge that adds a low-field direct current after breakdown. The direct current sustained vibrational excitation and radical production as the kernel expanded. At the flow velocities examined, the hybrid approach reduced the minimum energy needed for ignition. A manuscript on the hybrid-discharge simulations is in preparation.
 
 
 

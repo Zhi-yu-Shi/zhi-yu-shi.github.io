@@ -1,23 +1,17 @@
 ---
-title: "Mechanism of Nitride Formation on Ni(111) under N₂/H₂ Plasma Conditions"
+title: "How plasma-generated radicals drive nickel nitridation"
 permalink: /project/nitridation/
-excerpt: "How NH radical promotes nitride formation and ammonia synthesis"
-teaser: /images/projects/nitridation-thumb.jpg
-header:
-  overlay_image: /images/projects/nitridation-hero.jpg
-tags: [ammonia synthesis, nitride formation, plasma]
+project_order: 2
+excerpt: "Plasma kinetics and density functional theory explain how a mixed nitrogen–hydrogen plasma can drive nitrogen beneath a nickel surface more effectively than a pure nitrogen plasma."
 ---
 
-N2 dissociation is the rate limiting step in the Haber-Bosch process of ammonia synthesis. One effective way to reduce the barrier of N2 dissociation is to use metal nitride instead of metal itself as the catalyst. In this work, we aim to understand the reaction mechanism of nitride formation. Experiments have found that compared to N2 plasmas, nitride formation is more efficient at N2/H2 plasmas, specifically at N2/H2 ratio is 4:1. Besides, NH also reaches its maximum amount at the same mixture composition. We conducted DFT calculations to
-1. explain the mechanism of nitride formation on Nickel under N2/H2 plasma environments
-2. understand how NH facilitates nitride formation
-3. explain why the maximum nitride formation is observed at N2:H2 = 4:1
+In experiments on plasma-assisted ammonia synthesis, adding hydrogen to a nitrogen discharge produced more nickel nitride even though the gas contained less atomic nitrogen. I examined this discrepancy by connecting the radical populations in the plasma to the atomic steps that carry nitrogen below the surface.
 
-Our conclusions are:
+## From gas composition to the surface reaction
 
-In N₂ plasmas: nitridation follows direct N adsorption or N₂ adsorption/dissociation.
-In N₂/H₂ plasmas: nitridation proceeds via NH adsorption/dissociation.
-NH vs. N₂: NH adsorbs more favorably and dissociates with a lower barrier, enabling nearby N&H species that strongly promote N penetration.
-Synergy: N–H co-adsorption reduces activation/reaction energies beyond additive effects. 
-Competition: Preadsorbed N/H facilitates N penetration but also enhances competing H penetration → controlling H coverage is essential.
+I modeled how the N₂/H₂ feed ratio changes the populations of nitrogen and hydrogen radicals. I then used density functional theory to study how a nitrogen atom moves from the surface into nickel. The calculations showed that nitrogen and hydrogen adsorbed nearby can change the barrier for that step. The composition of the gas and the coverage of the surface together help explain how readily the metal takes up nitrogen.
+
+Once below the surface, nitrogen may participate in ammonia formation. This suggests a route for plasma-generated radicals to influence both the catalyst itself and the reactions it supports.
+
+The manuscript on nickel nitridation is in preparation. In a complementary published study, our team measured atomic nitrogen and hydrogen in the plasma. [Read the gas-phase diagnostics study in *ACS Energy Letters*](https://doi.org/10.1021/acsenergylett.4c00729).
 

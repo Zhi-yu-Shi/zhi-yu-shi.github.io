@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 295" width="620" height="295" role="img" aria-labelledby="heading desc">
+  <title id="heading">Training and testing a multifidelity interatomic potential</title>
+  <desc id="desc">Density functional theory data train the initial potential. Higher-accuracy multireference energies for selected configurations refine it by transfer learning. Trajectories on the resulting potential are tested against benchmark reaction rate constants.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M1 1 9 5 1 9Z" fill="#516b7c"/>
+    </marker>
+  </defs>
+  <rect width="620" height="295" rx="5" fill="#fafcfd"/>
+  <g stroke-width="1.5">
+    <rect x="22" y="23" width="265" height="73" rx="5" fill="#e8f1f7" stroke="#9ab6c8"/>
+    <rect x="333" y="23" width="265" height="73" rx="5" fill="#e6f3ef" stroke="#96b9ac"/>
+    <rect x="22" y="144" width="265" height="63" rx="5" fill="#fff" stroke="#9ab6c8"/>
+    <rect x="333" y="144" width="265" height="63" rx="5" fill="#fff" stroke="#96b9ac"/>
+    <path d="M466 211 V245" fill="none" stroke="#516b7c" stroke-width="2" marker-end="url(#arrow)" />
+    <path d="M154 99 V138" fill="none" stroke="#516b7c" stroke-width="2" marker-end="url(#arrow)" />
+    <path d="M466 99 V138" fill="none" stroke="#516b7c" stroke-width="2" marker-end="url(#arrow)" />
+    <path d="M289 175 H327" fill="none" stroke="#516b7c" stroke-width="2" marker-end="url(#arrow)" />
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle" fill="#263d4d">
+    <text x="154" y="54" font-size="19" font-weight="bold">DFT configurations</text>
+    <text x="154" y="78" font-size="16">Broad sampling of geometries</text>
+    <text x="466" y="54" font-size="19" font-weight="bold">Multireference energies</text>
+    <text x="466" y="78" font-size="16">High accuracy on a small subset</text>
+    <text x="166" y="122" font-size="15" text-anchor="start">Train</text>
+    <text x="478" y="122" font-size="15" text-anchor="start">Refine</text>
+    <text x="154" y="181" font-size="19" font-weight="bold">Initial potential</text>
+    <text x="466" y="181" font-size="19" font-weight="bold">Refined potential</text>
+    <text x="454" y="234" font-size="15" text-anchor="end">Run collision trajectories</text>
+    <text x="466" y="274" font-size="18" font-weight="bold">Reaction rate constants</text>
+  </g>
+</svg>

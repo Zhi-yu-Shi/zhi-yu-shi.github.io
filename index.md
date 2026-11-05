@@ -1,38 +1,25 @@
 ---
 layout: single
 title: "About me"
+description: "Zhiyu Shi develops scientific machine learning and multiscale models of reaction kinetics, plasma chemistry, ignition, and detonation for propulsion and energy systems."
 author_profile: true
+redirect_from:
+  - /about/
 ---
 
-I am currently a fifth-year PhD student in the department of Mechnical Enginnering at Princeton University, working with Prof. Yiguang Ju.
+<p id="profile-preview-note" hidden><small>December 2026 profile preview</small></p>
 
-Email: zs3643@princeton.edu
+I develop computational models that connect molecular reaction dynamics to ignition and detonation in propulsion systems. My research combines scientific machine learning, chemical kinetics, and simulations of reacting flows.
 
-I study plasma-assisted combustion and chemical synthesis, driven by the broader goal of enabling green manufacturing and a net-zero carbon future. My research centers on how to control non-equilibrium energy transfer to improve energy-conversion efficiency in reactive systems. I seek to bridge the understanding of microscale reaction kinetics with macroscale flow phenomena, both in the gas phase and on catalytic surfaces.
+{% include effective-text.html from=site.postdoc_start before="On November 23, 2026, I start as a postdoctoral scholar" after="I am a postdoctoral scholar" %} in the Department of Chemistry at the University of California, Berkeley, working with [Bingqing Cheng](https://chemistry.berkeley.edu/node/2526) on machine learning for atomistic simulation. {% include effective-text.html from=site.phd_conferral before="I completed my doctoral research" after="I earned my Ph.D." %} in Mechanical and Aerospace Engineering at Princeton University with Yiguang Ju. I received my B.S. in Theoretical and Applied Mechanics from Peking University.
 
-To achieve this, I have developed a multiscale modeling framework that integrates quantum-chemistry calculations (DFT), machine learning molecular dynamics (ML-MD), and large-scale parallel simulations of reactive flows. This framework allows me to connect fundamental reaction mechanisms with real-world plasma and combustion processes. Ultimately, my goal is to provide the scientific foundation and develop accurate, comprehensive modeling tools to enable sustainable, efficient, and controllable energy-conversion technologies.
+## Research
 
-<div style="display:flex; justify-content:space-between; gap:40px;">
+How much quantum chemistry is needed to predict a combustion reaction rate? For an elementary hydrogen reaction, I used a small set of high-accuracy calculations to refine a machine-learned interatomic potential. The resulting molecular trajectories reproduced benchmark rate constants while cutting the cost of generating training data by more than 80%. [Reaction dynamics and machine-learned potentials]({{ '/project/mlmd/' | relative_url }})
 
-  <!-- Interests 在左边 -->
-  <div style="flex:1;">
-    <h2>Interests</h2>
-    <ul class="fa-ul">
-      <li><span class="fa-li"><i class="fas fa-book"></i></span> Plasma-assisted combustion</li>
-      <li><span class="fa-li"><i class="fas fa-book"></i></span> Catalytic synthesis of green fuels</li>
-      <li><span class="fa-li"><i class="fas fa-book"></i></span> Multiscale modeling</li>
-      <li><span class="fa-li"><i class="fas fa-book"></i></span> Machine learning molecular dynamics</li>
-    </ul>
-  </div>
+At the scale of a reacting flow, I study how electrical discharges change when and where a fuel ignites. My microchannel simulations showed that the number of discharge pulses can change the mechanism of detonation onset. I also study how plasma-generated radicals alter catalytic surfaces, including how nitrogen enters nickel during ammonia synthesis. [Plasma-assisted detonation]({{ '/project/DDT/' | relative_url }}) · [Plasma–surface chemistry]({{ '/project/nitridation/' | relative_url }})
 
-  <!-- Education 在右边 -->
-  <div style="flex:1;">
-    <h2>Education</h2>
-    <ul class="fa-ul">
-      <li><span class="fa-li"><i class="fas fa-graduation-cap"></i></span> Ph.D., Mechanical & Aerospace Engineering — Princeton University, expected 2026</li>
-      <li><span class="fa-li"><i class="fas fa-graduation-cap"></i></span> B.S., Theoretical & Applied Mechanics — Peking University, 2021</li>
-    </ul>
-  </div>
+## Research direction
 
-</div>
+I want to build physics-informed surrogate models for multidisciplinary design optimization in aerospace propulsion. For example, how can a discharge ignite a moving fuel–air mixture with the least electrical energy as fuel composition and flow speed vary? I would use high-fidelity plasma and flow simulations to identify which reactions a faster model must retain, then use that model to compare pulse timings and electrode geometries under uncertain reaction rates.
 

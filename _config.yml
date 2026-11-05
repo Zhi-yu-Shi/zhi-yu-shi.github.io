@@ -7,10 +7,12 @@ site_theme    : "default"   # custom var used by AcademicPages (default / air)
 # Use AcademicPages as a remote theme (correct repo name)
 remote_theme  : academicpages/academicpages.github.io
 
-title         : "Zhiyu Shi / Graduate student, Princeton University"
+title         : "Zhiyu Shi"
 title_separator: "-"
 name          : &name "Zhiyu Shi"
-description   : &description "Multiscale modeling of plasma-assisted combustion and catalysis"
+description   : &description "Scientific machine learning and multiscale modeling of reacting flows, plasma chemistry, and aerospace propulsion."
+phd_conferral : "2026-11-21T00:00:00-05:00"
+postdoc_start : "2026-11-23T00:00:00-08:00"
 
 # Your GitHub Pages root URL and repo (make sure these match your actual repo/user)
 url           : "https://zhi-yu-shi.github.io"
@@ -24,11 +26,13 @@ author:
   avatar     : "profile.png"
   name       : "Zhiyu Shi"
   pronouns   : "he/him"
-  bio        : "PhD at Princeton | Plasma-assisted combustion & catalysis"
-  location   : "Princeton, NJ"
-  employer   : "Princeton University"
+  bio        : "Postdoctoral Scholar in Chemistry"
+  bio_before : "Incoming Postdoctoral Scholar in Chemistry · Nov 23, 2026"
+  location   : "Berkeley, CA"
+  location_before : "Princeton, NJ"
+  employer   : "University of California, Berkeley"
   uri        :
-  email      : "zs3643@princeton.edu"
+  email      : "zhiyu.shi.research@gmail.com"
 
   # Academic profiles
   googlescholar: "https://scholar.google.com/citations?user=USgOMmMAAAAJ&hl=en"
@@ -61,7 +65,7 @@ publication_category:
 teaser        :
 breadcrumbs   : false
 words_per_minute: 160
-future        : true
+future        : false
 read_more     : "disabled"
 talkmap_link  : false
 
@@ -94,7 +98,7 @@ staticman:
         format : "iso8601"
 
 atom_feed:
-  hide         : false
+  hide         : true
   path         :
 
 # =========================
@@ -159,6 +163,26 @@ exclude:
   - package.json*
   - Rakefile
   - README
+  - README.md
+  - CONTRIBUTING.md
+  - docker-compose.yaml
+  - markdown_generator
+  - scripts
+  - _posts
+  - _teaching
+  - _portfolio
+  - _pages/archive-layout-with-content.md
+  - _pages/category-archive.html
+  - _pages/collection-archive.html
+  - _pages/markdown.md
+  - _pages/non-menu-page.md
+  - _pages/page-archive.html
+  - _pages/tag-archive.html
+  - _pages/terms.md
+  - _pages/year-archive.html
+  - "files/paper*.pdf"
+  - "files/slides*.pdf"
+  - files/bibtex1.bib
   - tmp
   - vendor
 
