@@ -11,7 +11,7 @@ redirect_from:
 
 I develop computational models that connect molecular reaction dynamics to ignition and detonation in propulsion systems. My research combines scientific machine learning, chemical kinetics, and simulations of reacting flows.
 
-{% include effective-text.html from=site.postdoc_start before="On November 23, 2026, I start as a postdoctoral scholar" after="I am a postdoctoral scholar" %} in the Department of Chemistry at the University of California, Berkeley, working with [Bingqing Cheng](https://chemistry.berkeley.edu/node/2526) on machine learning for atomistic simulation. {% include effective-text.html from=site.phd_conferral before="I completed my doctoral research" after="I earned my Ph.D." %} in Mechanical and Aerospace Engineering at Princeton University with Yiguang Ju. I received my B.S. in Theoretical and Applied Mechanics from Peking University.
+{% include effective-text.html from=site.postdoc_start before="In November 2026, I start as a postdoctoral scholar" after="I am a postdoctoral scholar" %} in the Department of Chemistry at the University of California, Berkeley, working with [Bingqing Cheng](https://chemistry.berkeley.edu/node/2526) on machine learning for atomistic simulation. {% include effective-text.html from=site.phd_conferral before="I completed my doctoral research" after="I earned my Ph.D." %} in Mechanical and Aerospace Engineering at Princeton University with [Yiguang Ju](https://mae.princeton.edu/people/yiguang-ju). I received my B.S. in Theoretical and Applied Mechanics from Peking University.
 
 ## Research
 
