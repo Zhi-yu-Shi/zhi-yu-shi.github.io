@@ -246,10 +246,8 @@ defaults:
       path: ""
       type: project
     values:
-      layout: single        
-      author_profile: true
-      share: true
-      comments: false
+      layout: project-redirect
+      sitemap: false
       
   - scope:
       path: ""

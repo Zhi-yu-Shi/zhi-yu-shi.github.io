@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {% assign destination = '/project/' | relative_url | append: '#' | append: page.anchor %}
+    <meta charset="utf-8">
+    <title>{{ page.title | escape }} – Projects</title>
+    <link rel="canonical" href="{{ destination | absolute_url }}">
+    <meta name="robots" content="noindex">
+    <meta http-equiv="refresh" content="0; url={{ destination }}">
+  </head>
+  <body><a href="{{ destination }}">View {{ page.short_title | escape }} on the Projects page</a></body>
+</html>

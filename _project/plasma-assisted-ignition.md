@@ -1,19 +1,29 @@
 ---
-title: "Plasma-assisted ignition of ammonia and hydrogen"
+title: "From an electrical discharge to a sustained flame"
+short_title: "Plasma-assisted ignition"
+anchor: plasma-assisted-ignition
 permalink: /project/plasma-assisted-ignition/
-project_order: 3
-excerpt: "Two-dimensional simulations reveal how electric field, electrode spacing, and pulse timing determine whether a plasma-generated ignition kernel grows into a flame."
+project_order: 1
+figure_layout: pair
+figures:
+  - file: ignition-energy-partition.webp
+    width: 2200
+    height: 1700
+    alt: "Curves show how the fractions of electron energy going into excitation, dissociation, and ionization vary with the reduced electric field in an ammonia–hydrogen–air mixture."
+    caption: "In ammonia–hydrogen–air, the electric field determines which molecular processes receive the discharge energy."
+  - file: hybrid-ignition-temperature.webp
+    width: 1008
+    height: 830
+    alt: "Two rows of simulated hydrogen–air temperature maps follow the ignition region at 158 nanoseconds, 5 microseconds, and 0.2 milliseconds."
+    caption: "At equal deposited energy, the hybrid discharge (bottom) sustains a larger ignition region in fuel-rich hydrogen–air than nanosecond pulses alone (top)."
+references:
+  - doi: 10.1016/j.combustflame.2025.114053
+    credit: "Z. Shi, X. Mao, Z. Wang & Y. Ju"
+  - manuscript: hybrid-ignition
+  - doi: 10.1016/j.proci.2024.105353
+    credit: "N. Liu, B. Mei, X. Mao, Z. Wang, Z. Sun, Y. Xu, Z. Shi & Y. Ju"
 ---
 
-An electrical discharge creates a small region of hot, reactive gas. For ignition to succeed, this kernel must grow before radicals decay and heat escapes. I coupled plasma kinetics with two-dimensional flow and combustion simulations to trace how electrical energy reaches the chemical reactions that sustain the kernel.
+How can a nanosecond electrical pulse start a flame that survives long after the pulse ends? For fuels such as ammonia, slow ignition can limit their use in propulsion. I develop simulations that follow the energy deposited by a discharge from electron collisions with molecules to the growth of a flame in a moving gas.
 
-## Nanosecond pulses in ammonia and hydrogen blends
-
-In the NH₃/H₂/air flow studied at 700 K and 1 atm, a reduced electric field near 200 Td gave the strongest ignition enhancement. At that field, electrons efficiently created radicals and electronically excited species. Increasing the voltage further diverted more energy into ionization. Narrowing the electrode gap concentrated the deposited energy, but an overly narrow gap produced a kernel too small to develop into a sustained flame. [Read the study in *Combustion and Flame*](https://doi.org/10.1016/j.combustflame.2025.114053).
-
-## Sustaining a hydrogen ignition kernel between pulses
-
-For H₂/air, I compared nanosecond excitation alone with a hybrid discharge that adds a low-field direct current after breakdown. The direct current sustained vibrational excitation and radical production as the kernel expanded. At the flow velocities examined, the hybrid approach reduced the minimum energy needed for ignition. A manuscript on the hybrid-discharge simulations is in preparation.
-
-
-
+In ammonia–hydrogen mixtures, I found that a stronger field can divert energy away from the molecular processes that favor ignition. In hydrogen–air, sustaining excitation between pulses lowered the energy needed to ignite the flows I studied. These results show why ignition design depends on which reactions a discharge excites and how long their effects persist.

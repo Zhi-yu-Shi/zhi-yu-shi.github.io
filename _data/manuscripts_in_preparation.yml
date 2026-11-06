@@ -1,10 +1,14 @@
 - title: "Two-dimensional modeling of hybrid nanosecond pulsed and DC discharges for H₂/air ignition"
+  id: hybrid-ignition
   authors: "Shi, Z., Tsunoda, A., & Ju, Y."
 - title: "Plasma-generated radicals induce nickel surface nitridation for ammonia synthesis"
+  id: nickel-nitridation
   authors: "Shi, Z., Lele, A., Zheng, Y., Kondratowicz, C., Fu, G., Koel, B. E., & Ju, Y."
 - title: "A unified ab initio-trained machine learning potential for quantitative reaction dynamics of HO₂ + R radical reactions in hydrogen combustion"
+  id: radical-reactions
   authors: "Shi, Z., Lele, A., Jasper, A. W., Klippenstein, S. J., & Ju, Y."
 - title: "Ab initio-trained machine learning molecular dynamics for collisional energy transfer in HO₂ + M third-body reactions"
+  id: collisional-energy-transfer
   authors: "Shi, Z., Lele, A., Jasper, A. W., Klippenstein, S. J., & Ju, Y."
 - title: "Single-shot Rayleigh Scattering Imaging of Atmospheric-Pressure Nanosecond-Pulsed Nitrogen Discharge"
   authors: "Bao, Y., Shi, Z.*, Cao, Y., Peng, A., Sun, J., Kristenson, E., Shneider, M., & Ju, Y."

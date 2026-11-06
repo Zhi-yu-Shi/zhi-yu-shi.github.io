@@ -1,22 +1,32 @@
 ---
-title: "Machine-learned interatomic potentials for reaction kinetics"
+title: "Learning reaction dynamics from molecular collisions"
+short_title: "Machine-learned reaction dynamics"
+anchor: molecular-reaction-dynamics
 permalink: /project/mlmd/
-project_order: 1
-excerpt: "I used multifidelity transfer learning to predict elementary reaction rates in hydrogen combustion while reducing the cost of generating quantum-chemistry training data."
+project_order: 4
+figure_layout: portrait
+figures:
+  - file: molecular-reaction-dynamics.webp
+    thumbnail: molecular-reaction-dynamics-800.webp
+    width: 2200
+    height: 2374
+    alt: "A transfer-learned interatomic potential drives molecular collision trajectories. Two plots compare predicted and reference rate constants for hydrogen and oxygen atoms reacting with HO₂."
+    caption: "From quantum energies to collision statistics. The two panels at the bottom test the learned potential against reference reaction rates."
+references:
+  - doi: 10.1021/acs.jpca.4c00750
+    credit: "Z. Shi, A. D. Lele, A. W. Jasper, S. J. Klippenstein & Y. Ju"
+  - doi: 10.2514/6.2026-1623
+    title: "Ab Initio-Trained Machine Learning Molecular Dynamics Model for Radical Reactions in Hydrogen Combustion"
+    credit: "Z. Shi, A. D. Lele, A. W. Jasper, S. J. Klippenstein & Y. Ju"
+    venue: "AIAA SciTech Forum"
+    year: 2026
+    note: "Conference paper"
+  - doi: 10.1021/acs.jpcc.4c07596
+    credit: "A. D. Lele, Z. Shi, S. Khetan, E. A. Carter, J. M. P. Martirez & Y. Ju"
+  - manuscript: radical-reactions
+  - manuscript: collisional-energy-transfer
 ---
 
-A potential can fit the energies of thousands of molecular configurations and still give the wrong reaction rate. For hydrogen combustion, I tested a machine-learned potential by running molecular collisions and comparing the predicted rate constants with benchmark calculations.
+Models of flames and catalysts depend on rate constants. Each one represents the outcome of countless molecular encounters, only a fraction of which form a new bond. I train interatomic potentials on quantum calculations so that enough of these encounters can be simulated to predict rates directly. For a benchmark reaction in hydrogen combustion, combining two levels of quantum chemistry reproduced the reference rates while cutting the cost of generating training data by more than 80%.
 
-## Learning from two levels of quantum chemistry
-
-I first trained the potential on a large set of density functional theory calculations, then refined it with higher-accuracy multireference energies for a small subset of configurations. For H + HO₂ → H₂ + ³O₂, quasi-classical trajectories on the refined potential reproduced the benchmark rate constants. Transfer learning reduced the cost of generating the training data by more than 80% relative to using high-accuracy quantum calculations alone. [Read the study in *The Journal of Physical Chemistry A*](https://doi.org/10.1021/acs.jpca.4c00750).
-
-<figure>
-  <img src="{{ '/images/projects/multifidelity-kinetics.svg' | relative_url }}" width="620" height="295" style="max-width: 100%; height: auto;" alt="Density functional theory data train an initial potential. Multireference energies refine it. Collision trajectories on the refined potential yield rate constants for comparison with benchmarks.">
-</figure>
-
-## From one reaction to competing outcomes
-
-In collaboration with Argonne National Laboratory, I extended this approach to model HO₂ collisions with radicals and with third bodies. A collision can rearrange chemical bonds or redistribute energy among molecular motions. The trajectories let us extract reaction rates and collisional energy-transfer statistics for kinetic models of hydrogen combustion. [Read the AIAA SciTech paper on radical reactions](https://doi.org/10.2514/6.2026-1623).
-
-In related work, I helped develop a machine-learned force field for ammonia synthesis on iron catalysts. We used molecular dynamics to study how temperature modulation affects reactions on the iron surface. [Read the study in *The Journal of Physical Chemistry C*](https://doi.org/10.1021/acs.jpcc.4c07596).
+With Argonne collaborators, I have extended this approach to collisions that redistribute energy as well as those that form new products. With Aditya Lele and colleagues, I helped develop a force field to follow ammonia synthesis on iron under temperature modulation. These studies connect the motion of individual atoms to the reaction data that larger-scale models need.

@@ -1,0 +1,52 @@
+---
+layout: archive
+title: "Projects"
+description: "Research on plasma-assisted ignition and detonation, the changing surfaces of ammonia catalysts, and machine-learned molecular dynamics."
+permalink: /project/
+author_profile: true
+---
+
+{% assign projects = site.project | sort: "project_order" %}
+<div class="research-projects">
+  <p class="research-projects__intro">Where does the energy of an electrical discharge go, and which reactions determine what it accomplishes? I study how a discharge can sustain a flame, change its transition to detonation, or transform a metal catalyst. Machine-learned molecular dynamics lets me examine the individual collisions and surface reactions behind these larger-scale processes.</p>
+  <nav class="research-projects__contents" aria-label="Projects on this page">
+    <ul>
+      {% for project in projects %}<li><a href="#{{ project.anchor }}">{{ project.short_title }}</a></li>{% endfor %}
+    </ul>
+  </nav>
+  {% for project in projects %}
+    <section class="research-project research-project--{{ project.figure_layout }}" aria-labelledby="{{ project.anchor }}">
+      <h2 id="{{ project.anchor }}">{{ project.title | escape }}</h2>
+      <div class="research-project__body">
+        <div class="research-project__story">{{ project.content | markdownify }}</div>
+        <div class="research-project__figures">
+          {% for figure in project.figures %}
+            {% assign image_path = '/images/projects/' | append: figure.file | relative_url %}
+            <figure>
+              <a class="research-project__image" href="{{ image_path }}" tabindex="-1">
+                <img src="{{ image_path }}"{% if figure.thumbnail %} srcset="{{ '/images/projects/' | append: figure.thumbnail | relative_url }} 800w, {{ image_path }} {{ figure.width }}w" sizes="(min-width: 1100px) 470px, (min-width: 768px) 700px, 100vw"{% endif %} width="{{ figure.width }}" height="{{ figure.height }}" alt="{{ figure.alt | escape }}" {% unless project.project_order == 1 %}loading="lazy"{% endunless %} decoding="async">
+              </a>
+              <figcaption>{{ figure.caption | escape }} <a class="research-project__enlarge" href="{{ image_path }}" aria-label="View full-size figure: {{ figure.alt | escape }}">Full size</a></figcaption>
+            </figure>
+          {% endfor %}
+        </div>
+        <div class="research-project__references">
+          <h3>Related publications</h3>
+          <ul>
+            {% for ref in project.references %}
+              {% if ref.manuscript %}
+                {% assign paper = site.data.manuscripts_in_preparation | where: "id", ref.manuscript | first %}
+                <li><span class="research-project__paper">{{ paper.title | escape }}</span><span class="research-project__credit">{{ paper.authors | escape }} &middot; <em>Manuscript in preparation</em></span></li>
+              {% else %}
+                {% assign url = 'https://doi.org/' | append: ref.doi %}
+                {% assign paper = site.publications | where: "paperurl", url | first %}
+                <li><a class="research-project__paper" href="{{ url }}">{{ ref.title | default: paper.title | escape }}</a><span class="research-project__credit">{{ ref.credit | escape }} &middot; <em>{{ ref.venue | default: paper.venue | escape }}</em> ({{ ref.year | default: paper.year }}){% if ref.note %} &middot; {{ ref.note | escape }}{% endif %}</span></li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </section>
+  {% endfor %}
+  <aside class="research-projects__earlier"><strong>Earlier work at MIT.</strong> With Sili Deng and colleagues, I co-developed Stiff-PINN to model chemical reaction networks whose fast and slow processes span widely separated timescales. <a href="https://doi.org/10.1021/acs.jpca.1c05102">Read the paper</a>.</aside>
+</div>

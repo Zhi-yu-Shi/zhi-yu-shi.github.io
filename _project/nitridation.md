@@ -1,17 +1,29 @@
 ---
-title: "How plasma-generated radicals drive nickel nitridation"
+title: "When a plasma changes the catalyst itself"
+short_title: "Plasma catalysis"
+anchor: plasma-catalysis
 permalink: /project/nitridation/
-project_order: 2
-excerpt: "Plasma kinetics and density functional theory explain how a mixed nitrogen–hydrogen plasma can drive nitrogen beneath a nickel surface more effectively than a pure nitrogen plasma."
+project_order: 3
+figure_layout: portrait
+figures:
+  - file: plasma-nickel-nitridation.webp
+    thumbnail: plasma-nickel-nitridation-800.webp
+    width: 2111
+    height: 2400
+    alt: "Atomistic diagrams compare surface reaction pathways with a proposed cycle in which plasma-generated radicals help nitrogen enter nickel and lattice nitrogen can form ammonia."
+    caption: "Surface reactions and a proposed alternative route to ammonia in which nitrogen enters the nickel catalyst and can subsequently react with hydrogen."
+references:
+  - manuscript: nickel-nitridation
+  - doi: 10.1021/acs.jpclett.5c03923
+    title: "Unraveling in-situ formation of surface nickel nitride structures in plasma-assisted catalytic ammonia synthesis"
+    credit: "C. Kondratowicz, Y. Zheng and colleagues"
+    venue: "The Journal of Physical Chemistry Letters"
+    year: 2026
+    note: "Companion experiment"
+  - doi: 10.1021/acsenergylett.4c00729
+    credit: "N. Liu, X. Mao, C. Kondratowicz, T. Y. Chen, B. Mei, Z. Wang, Y. Xu, H. Zhong, Z. Shi, A. Morozov, A. Dogariu & Y. Ju"
 ---
 
-In experiments on plasma-assisted ammonia synthesis, adding hydrogen to a nitrogen discharge produced more nickel nitride even though the gas contained less atomic nitrogen. I examined this discrepancy by connecting the radical populations in the plasma to the atomic steps that carry nitrogen below the surface.
+A discharge can reshape chemistry at a solid surface as well as in a flowing gas. In ammonia synthesis, that raises a fundamental design question. What if the plasma changes the identity of the working catalyst and opens a reaction pathway that the original metal could not sustain?
 
-## From gas composition to the surface reaction
-
-I modeled how the N₂/H₂ feed ratio changes the populations of nitrogen and hydrogen radicals. I then used density functional theory to study how a nitrogen atom moves from the surface into nickel. The calculations showed that nitrogen and hydrogen adsorbed nearby can change the barrier for that step. The composition of the gas and the coverage of the surface together help explain how readily the metal takes up nitrogen.
-
-Once below the surface, nitrogen may participate in ammonia formation. This suggests a route for plasma-generated radicals to influence both the catalyst itself and the reactions it supports.
-
-The manuscript on nickel nitridation is in preparation. In a complementary published study, our team measured atomic nitrogen and hydrogen in the plasma. [Read the gas-phase diagnostics study in *ACS Energy Letters*](https://doi.org/10.1021/acsenergylett.4c00729).
-
+Experiments found that adding hydrogen to a nitrogen plasma could increase nitrogen uptake by nickel, even as less atomic nitrogen was available in the gas. Working with Yiteng Zheng and colleagues, I used plasma kinetics and density functional theory to explain this reversal. Hydrogen adsorbed on the surface helps nitrogen enter the metal. The resulting nitride could itself supply nitrogen for ammonia formation through a Mars–van Krevelen cycle. This suggests a way to tune the working catalyst during operation through the composition of the discharge.

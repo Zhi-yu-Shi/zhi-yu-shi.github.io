@@ -1,23 +1,25 @@
 ---
-title: "Plasma-assisted transition from deflagration to detonation"
+title: "When ignition triggers a detonation"
+short_title: "Detonation onset"
+anchor: detonation
 permalink: /project/DDT/
-project_order: 4
-excerpt: "In a hydrogen–oxygen microchannel, a moderate number of plasma pulses advanced detonation, while extensive pre-oxidation delayed the formation of a coupled shock and reaction front."
+project_order: 2
+figure_layout: wide
+figures:
+  - file: plasma-detonation-transition.webp
+    width: 1344
+    height: 480
+    alt: "Flame-front velocity versus time for several discharge pulse counts, beside a diagram linking pulse count to ignition, shock formation, and detonation onset."
+    caption: "The velocity histories show when the flame accelerates. The diagram traces how changing the pulse count can advance or delay its transition to detonation."
+references:
+  - doi: 10.1016/j.proci.2024.105659
+    credit: "Z. Shi, X. Mao, A. Thawko & Y. Ju"
+  - doi: 10.2514/1.J062966
+    credit: "M. Vorenkamp, S. Steinmetz, X. Mao, Z. Shi, A. Starikovskiy, Y. Ju & C. Kliewer"
+  - doi: 10.1016/j.proci.2024.105517
+    credit: "A. Thawko, Y. Cao, Z. Shi, M. Vorenkamp, Z. Wang, B. Mei, X. Mao & Y. Ju"
 ---
 
-A flame can accelerate until the leading shock and chemical reaction front travel together as a detonation. I studied how a nanosecond discharge changes this transition by coupling plasma kinetics to two-dimensional reactive-flow simulations of a hydrogen–oxygen microchannel.
+Once a flame takes hold, the location and timing of the next ignition event can determine whether a shock and a reaction front join to form a detonation. That transition is desirable in detonation engines and dangerous in fuel-handling equipment. My hydrogen–oxygen simulations showed why a plasma can steer it in either direction. A discharge can hasten local ignition yet consume enough fuel ahead of the flame to delay detonation. Predicting the outcome requires following how chemical energy reinforces the shock.
 
-## Why pulse number changes the outcome
-
-In the simulations, 250 discharge pulses advanced detonation onset by 44 µs relative to the case with no discharge. Plasma-generated species shortened the chemical induction time near the channel wall. Localized ignition occurred earlier and coupled more rapidly to the shock.
-
-At 1,200 pulses, the simulated mixture was hotter and could ignite locally before the burned gas reached the speed of sound. Yet detonation occurred 154 µs later than in the untreated mixture. Oxidation during the discharge had already consumed some of the fuel, leaving less chemical energy to strengthen the leading shock.
-
-<figure>
-  <img src="{{ '/images/projects/ddt-onset.svg' | relative_url }}" width="640" height="300" style="max-width: 100%; height: auto;" alt="Detonation onset is earliest at 250 pulses (688 microseconds), compared with 732 microseconds at zero pulses and 886 microseconds at 1,200 pulses.">
-  <figcaption>Simulated onset time in a stoichiometric H₂/O₂ microchannel. Each point is one discharge condition. Data from Table 1 of <a href="https://doi.org/10.1016/j.proci.2024.105659">Shi et al. (2024)</a>.</figcaption>
-</figure>
-
-The first-author paper received a 2025 Distinguished Paper Award Honorable Mention in the Combustion Technology Colloquium of the 40th International Symposium on Combustion. [Read the paper in *Proceedings of the Combustion Institute*](https://doi.org/10.1016/j.proci.2024.105659).
-
-I also collaborated on microchannel experiments that examined how ozone changes the coupling between ignition and shocks in dimethyl ether mixtures. [Read the companion study](https://doi.org/10.1016/j.proci.2024.105517).
+In companion experiments on dimethyl ether led by Madeline Vorenkamp, our team used laser diagnostics and high-speed imaging to probe the role of low-temperature chemistry. In related work with Andy Thawko, we showed how ozone accelerates the coupling between ignition and a shock. Together, these studies show how reactions ahead of a flame can strengthen or weaken its coupling to a shock.
